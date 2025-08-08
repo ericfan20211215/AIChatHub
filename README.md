@@ -50,7 +50,6 @@ cd ../frontend
 ```bash
 npm install
 ```
-
 ### Step 3: Configure Environment Variables
 
 Create a .env file inside the backend folder and add your credentials:
@@ -62,4 +61,25 @@ MONGODB_URL=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret
 COOKIE_SECRET=your_cookie_secret
 ```
+
+Important:
+- Replace placeholders with your own values.
+- This project uses the gpt-3.5-turbo model — ensure your OpenAI API key has access to it.
+- You must have a MongoDB database set up (e.g., MongoDB Atlas) and use its connection string for MONGODB_URL.
+
+### Step 4: Running the project locally
+
+1. **Start the backend server**
+   ```bash
+   cd backend
+   npm run dev
+   ```
+   
+2. **Start the frontend app**
+   ```bash
+   cd ../frontend
+   npm run dev
+   ```
+
+
 
